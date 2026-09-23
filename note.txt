@@ -1,0 +1,19 @@
+//sIMPLE EXAMPLE OF TAILWIND CSS 
+
+
+APP.JSX
+
+function App() {
+
+  return (
+    <div className="bg-blue-200">
+      <div className="bg-amber-200">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, alias!</p>
+      </div>
+      <h2 className="text-6xl font-semibold">Welcome</h2>
+    </div>
+
+  )
+}
+
+export default App

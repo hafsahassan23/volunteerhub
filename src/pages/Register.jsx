@@ -1,0 +1,33 @@
+import React from "react";
+import RegisterForm from "../components/RegisterForm";
+import { useNavigate } from "react-router-dom";
+
+const Register = () => {
+      const navigate = useNavigate();
+
+      const handleFormSummitSuccess = () => {
+            setTimeout(() => {
+                  navigate("/volunteers");
+            }, 2000);
+      };
+
+     return (
+      <div className="container mx-auto px-4 py-12">
+            <div className="text-center mb-10">
+                  <h1 className="text-4xl font-bold text-gray-900 mb-4">
+                        Join Our Volunteer Team
+                  </h1>
+                  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Fill out the form below to register as a volunteer. Your information
+                        helps us match you with opportunities that align with your skillsand 
+                        interests.
+                  </p>
+            </div>
+            <RegisterForm onSummitSuccess={handleFormSummitSuccess} />
+      </div>
+     ) 
+
+
+}
+
+export default Register
